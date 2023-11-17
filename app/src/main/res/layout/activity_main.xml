@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Магазин"
+                android:textSize="35dp"
+                android:textColor="@color/silver"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/magazin">
+            </TextView>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/big"
+                android:layout_width="370dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/magazin">
+
+                <TextView
+                    android:id="@+id/bigtext1"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Умные подарки для мужчин"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bigtext2"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Со скидкой до"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/aqua"
+                    android:layout_below="@+id/bigtext1">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bigtext3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30% "
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/aqua"
+                    android:layout_toRightOf="@+id/bigtext2"
+                    android:layout_below="@+id/bigtext1">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/bigtext4"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="С 15 по 24 февраля"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/silver"
+                    android:layout_below="@+id/bigtext2">
+                </TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="Узнать больше"
+                    android:textSize="18dp"
+                    android:layout_below="@+id/bigtext4"
+                    android:layout_marginTop="5dp">
+                </Button>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tech"
+                    android:layout_toRightOf="@+id/bigtext4">
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/notebook"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape"
+                android:layout_marginTop="60dp"
+                android:layout_below="@id/big">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ноутбуки"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/notebook">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/note_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectable">
+                </Button>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/tablet"
+                android:layout_width="180dp"
+                android:layout_height="220dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@id/notebook"
+                android:layout_below="@id/big">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Планшеты"
+                    android:textSize="25dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp">
+                </TextView>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tablet">
+                </ImageView>
+
+                <Button
+                    android:id="@+id/tablet_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectable">
+                </Button>
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/phone"
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/shape"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/notebook">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Телефоны"
+                        android:textSize="25dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp">
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/phone">
+                    </ImageView>
+
+                    <Button
+                        android:id="@+id/phone_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectable">
+                    </Button>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/watches"
+                    android:layout_width="180dp"
+                    android:layout_height="220dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/phone"
+                    android:layout_below="@id/tablet">
+
+
+                    <TextView
+                        android:id="@+id/watchtext1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Носимые"
+                        android:textSize="25dp"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp">
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/watch"
+                        android:layout_below="@id/watchtext1">
+                    </ImageView>
+
+                    <Button
+                        android:id="@+id/watch_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/selectable">
+                    </Button>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
